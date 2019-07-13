@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import {MatSidenavModule} from '@angular/material';
 
 import { CoreRoutingModule } from './core-routing.module';
 import { SharedModule } from './shared/shared.module';
@@ -11,7 +12,7 @@ import { HomeComponent } from './containers/home/home.component';
   imports: [
     CommonModule,
     CoreRoutingModule,
-    SharedModule
+    SharedModule,
   ]
 })
 export class CoreModule { }
