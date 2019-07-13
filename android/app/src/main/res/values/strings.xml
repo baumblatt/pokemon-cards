@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">PokemonCards</string>
+    <string name="title_activity_main">PokemonCards</string>
+    <string name="package_name">com.baumblatt.pokemons</string>
+    <string name="fileprovider_authority">com.baumblatt.pokemons.fileprovider</string>
+    <string name="custom_url_scheme">com.baumblatt.pokemons</string>
+</resources>
