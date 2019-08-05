@@ -1,5 +1,6 @@
 <mat-list>
-	<mat-list-item routerLink="../pokemon">Lunala</mat-list-item>
-	<mat-list-item routerLink="../pokemon">Picaxu</mat-list-item>
-	<mat-list-item routerLink="../pokemon">Solgaleo</mat-list-item>
+	<mat-list-item *ngFor="let card of cards"
+				   (click)="select(card)" routerLink="../pokemon">
+		{{card.name}}
+	</mat-list-item>
 </mat-list>

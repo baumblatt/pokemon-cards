@@ -1,1 +1,1 @@
-<app-pokemon-detail></app-pokemon-detail>
+<app-pokemon-detail [card]="card$ | async" (actionEmitter)="dispatch($event)"></app-pokemon-detail>
