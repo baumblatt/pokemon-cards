@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "cartas-pokemon": {
+      "hosting": {
+        "pokemon-cards": [
+          "cartas-pokemon"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "cartas-pokemon"
+  }
+}

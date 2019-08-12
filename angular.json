@@ -136,8 +136,13 @@
               "devServerTarget": "pokemon-cards:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
-    }},
+    }
+  },
   "defaultProject": "pokemon-cards"
 }
