@@ -1,18 +1,21 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import {MatSidenavModule} from '@angular/material';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
+import {EffectsModule} from '@ngrx/effects';
 
-import { CoreRoutingModule } from './core-routing.module';
-import { SharedModule } from './shared/shared.module';
-import { LayoutComponent } from './containers/layout/layout.component';
-import { HomeComponent } from './containers/home/home.component';
+import {CoreRoutingModule} from './core-routing.module';
+import {SharedModule} from './shared/shared.module';
+import {LayoutComponent} from './containers/layout/layout.component';
+import {HomeComponent} from './containers/home/home.component';
+import {CoreEffects} from './store/effects/core.effects';
 
 @NgModule({
-  declarations: [LayoutComponent, HomeComponent],
-  imports: [
-    CommonModule,
-    CoreRoutingModule,
-    SharedModule,
-  ]
+    declarations: [LayoutComponent, HomeComponent],
+    imports: [
+        CommonModule,
+        CoreRoutingModule,
+        SharedModule,
+        EffectsModule.forFeature([CoreEffects]),
+    ]
 })
-export class CoreModule { }
+export class CoreModule {
+}

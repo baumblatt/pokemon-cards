@@ -2,7 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {Action, select, Store} from '@ngrx/store';
 import {Observable} from 'rxjs';
 import {Pokemon} from '../../model/pokemon.model';
-import {PokemonState} from '../../store/reducers/global.reducer';
+import {PokemonState} from '../../store/reducers/feature.reducers';
 import {getSelectedCard} from '../../store/selectors/cards.selectors';
 
 @Component({

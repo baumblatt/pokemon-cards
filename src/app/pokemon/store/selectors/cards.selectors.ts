@@ -1,6 +1,6 @@
 import {createSelector} from '@ngrx/store';
 import {cardAdapter} from '../reducers/cards.reducer';
-import {getPokemonState} from '../reducers/global.reducer';
+import {getPokemonState} from '../reducers/feature.reducers';
 
 export const getCardsState = createSelector(
     getPokemonState,

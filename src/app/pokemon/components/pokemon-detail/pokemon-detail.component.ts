@@ -26,7 +26,9 @@ export class PokemonDetailComponent implements OnInit {
 
     @Input()
     set card(card: Pokemon) {
-        this.pokemonForm.patchValue(card);
+        if (card) {
+            this.pokemonForm.patchValue(card);
+        }
     }
 
     ngOnInit() {
