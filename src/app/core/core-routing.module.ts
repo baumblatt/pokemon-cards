@@ -8,10 +8,8 @@ const routes: Routes = [
     {path: 'layout', component: LayoutComponent, children: [
         {path: '', pathMatch: 'full', redirectTo: 'home'},
         {path: 'home', component: HomeComponent},
-        {path: 'pokemon', loadChildren:
-                    () => import('../pokemon/pokemon.module').then(mod => mod.PokemonModule)}
-        ]
-    },
+        {path: 'pokemon', loadChildren: () => import('../pokemon/pokemon.module').then(mod => mod.PokemonModule)}
+    ]},
 ];
 
 @NgModule({
