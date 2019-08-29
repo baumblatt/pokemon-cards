@@ -7,6 +7,14 @@
 			<mat-list-item routerLink="/core/layout/pokemon" (click)="sidenav.close()">
 				<mat-icon>list_view</mat-icon>Pokemons
 			</mat-list-item>
+			<mat-list-item (click)="logout(); sidenav.close()" *ngIf="isAuthenticated$ | async; else login">
+				<mat-icon>close</mat-icon>Logout
+			</mat-list-item>
+			<ng-template #login>
+				<mat-list-item routerLink="/core/layout/login" (click)="sidenav.close()" >
+					<mat-icon>person</mat-icon>Login
+				</mat-list-item>
+			</ng-template>
 		</mat-list>
 	</mat-sidenav>
 	<mat-sidenav-content fxFlexFill>
